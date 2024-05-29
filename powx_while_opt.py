@@ -1,0 +1,11 @@
+x=2
+n=10
+ans=1
+while(n>0):
+    if(n%2==0):
+        x*=x
+        n=n//2
+    else:
+        ans*=x
+        n-=1
+print(ans)
