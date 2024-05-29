@@ -1,17 +1,23 @@
-def atmost(nums,goal):
-    prefix=0
-    i=0
-    j=0
-    count=0
-    while(j<len(nums)):
-        prefix+=nums[j]
-        while(prefix>goal and i<=j):
-            print(prefix,goal)
-            prefix-=nums[i]
-            i+=1
-        count+=j-i+1
-        j+=1
-    return count
-nums=[0,0,0,0,0]
-goal=0
-print(atmost(nums,goal)-atmost(nums,goal-1))
+def pow(x,n):
+    if(n==0):
+        return 1
+    if(n%2==0):
+        return pow(x*x,n//2)
+    else:
+        return x*pow(x,n-1)
+
+'''
+2^10
+
+4^5
+4*4^4
+4*16^2
+4*256*1
+'''
+n=-1
+x=2
+if(n<0):
+    n*=-1
+    print("{:.5f}".format(1/pow(x,n)))
+else:
+    print("{:.5f}".format(pow(x,n)))
