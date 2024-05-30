@@ -9,7 +9,7 @@ def merge(arr,left,mid,end):
     right=mid+1
     temp=[]
     while(start<=mid and right<=end):
-        if(arr[start]<arr[right]):
+        if(arr[start]<=arr[right]):
             temp.append(arr[start])
             start+=1
         else:
