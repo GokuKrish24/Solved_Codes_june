@@ -1,5 +1,6 @@
-Hi this is Gokul.
-If you are in this repository and reading this you will find all the codes I have practiced in my 1 month holiday.
-I have also tried these codes in leetcode .
-Here's my leetcode profile https://leetcode.com/u/VGK240503/.
-Wish me luck.
+<html>
+<head></head>
+<body>
+<h4>Hi this is Gokul.</h4>
+<p>In this repository you can notice all the codes I have practiced in my 1 month holiday.</p>
+<p>Wish me luck to keep continuing to do things like this.  :P </p>
