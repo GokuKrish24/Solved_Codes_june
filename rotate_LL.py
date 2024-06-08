@@ -24,9 +24,7 @@ else:
     temp=slow.next
     t1=slow.next
     slow.next=None
-    while(temp.next!=None):
-        temp=temp.next
-    temp.next=head
+    fast.next=head
     head=t1
     x=head
     while(x!=None):
