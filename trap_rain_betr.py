@@ -1,0 +1,19 @@
+arr=[0,1,0,2,1,0,1,3,2,1,2,1]
+prefix=[]
+suffix=[]
+j=0
+while(j<len(arr)):
+    if(j==0):
+        prefix.append(arr[j])
+        suffix.append(arr[len(arr)-j-1])
+        j+=1
+    else:
+        prefix.append(max(arr[j],prefix[j-1]))
+        suffix.insert(0,max(arr[len(arr)-j-1],suffix[0]))
+        j+=1
+print(prefix)
+print(suffix)
+ans=0
+for i in range(len(arr)):
+    ans+=min(prefix[i],suffix[i])-arr[i]
+print(ans)
